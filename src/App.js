@@ -1,41 +1,35 @@
-import Category from "./components/category-item/category-item.component";
-import "./categories.styles.scss";
+import Directory from "./components/directory/directory.component";
 
 const App = () => {
   const categories = [
     {
       id: 1,
-      title: "hats",
-      imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+      title: "Hats",
+      imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
     },
     {
       id: 2,
-      title: "jackets",
-      imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+      title: "Jackets",
+      imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
     },
     {
       id: 3,
-      title: "sneakers",
-      imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+      title: "Sneakers",
+      imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
     },
     {
       id: 4,
-      title: "womens",
-      imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+      title: "Womens",
+      imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
     },
     {
       id: 5,
-      title: "mens",
-      imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+      title: "Mens",
+      imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
     },
   ];
-  // console.log(categories[1].imageUrl);
   return (
-    <div className="categories-container">
-      {categories.map((category) => (
-        <Category key={category.id} category={category} />
-      ))}
-    </div>
+    <Directory categories={categories} />
   );
 };
 
